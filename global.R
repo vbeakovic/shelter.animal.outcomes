@@ -32,6 +32,7 @@ training$BreedReduced <- sapply(training$Breed,
                        function(x) strsplit(x, split = '/')[[1]][1])
 
 
+
 mixIndex <- grep("mix", training$BreedReduced, ignore.case = TRUE)
 pureSatus <- training$BreedReduced[mixIndex]
 mixedStatus <- training$BreedReduced[-mixIndex]
